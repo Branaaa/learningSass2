@@ -8,7 +8,7 @@ $btn-warning: $orange;
 $btn-info: $cyan;
 $btn-dark: $black;
 
-.btn {
+%btn {
   display: inline-block;
   padding: 10px 25px;
   border: none;
@@ -21,37 +21,37 @@ $btn-dark: $black;
 }
 
 .btn-default {
-  @extend .btn;
+  @extend %btn;
   background-color: $btn-default;
   color: $btn-default-color;
 }
 
 .btn-danger {
-  @extend .btn;
+  @extend %btn;
   background-color: $btn-danger;
   color: $btn-default-color;
 }
 
 .btn-success {
-  @extend .btn;
+  @extend %btn;
   background-color: $btn-success;
   color: $btn-default-color;
 }
 
 .btn-warning {
-  @extend .btn;
+  @extend %btn;
   background-color: $btn-warning;
   color: $btn-default-color;
 }
 
 .btn-info {
-  @extend .btn;
+  @extend %btn;
   background-color: $btn-info;
   color: $btn-dark-color;
 }
 
 .btn-dark {
-  @extend .btn;
+  @extend %btn;
   background-color: $btn-dark;
   color: $btn-default-color;
 }
